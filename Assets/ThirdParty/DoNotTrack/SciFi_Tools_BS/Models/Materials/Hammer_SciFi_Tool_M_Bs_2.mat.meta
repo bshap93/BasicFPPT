@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 763a1647fd8f9e949a50909d6588e4a2
+timeCreated: 1523898527
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 117457
+  packageName: Sci-Fi Tools
+  packageVersion: 1.0
+  assetPath: Assets/ThirdParty/SciFi_Tools_BS/Models/Materials/Hammer_SciFi_Tool_M_Bs_2.mat
+  uploadId: 242452

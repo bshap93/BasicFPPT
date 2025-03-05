@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: efdc6d31ee5e58349bd28802f9cce677
+timeCreated: 1523898527
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 117457
+  packageName: Sci-Fi Tools
+  packageVersion: 1.0
+  assetPath: Assets/ThirdParty/SciFi_Tools_BS/Models/Materials/Scanner_SciFi_Tool_M_Bs.mat
+  uploadId: 242452

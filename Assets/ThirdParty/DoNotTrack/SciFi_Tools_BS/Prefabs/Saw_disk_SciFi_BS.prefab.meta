@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b4ceb97c66f9d0a44b2bb4ee2b4068c6
+timeCreated: 1523906004
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 117457
+  packageName: Sci-Fi Tools
+  packageVersion: 1.0
+  assetPath: Assets/ThirdParty/SciFi_Tools_BS/Prefabs/Saw_disk_SciFi_BS.prefab
+  uploadId: 242452

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5bb04711e0e2f5a4baff849f18072196
+timeCreated: 1523904910
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 117457
+  packageName: Sci-Fi Tools
+  packageVersion: 1.0
+  assetPath: Assets/ThirdParty/SciFi_Tools_BS/Prefabs/Hammer_SciFi_Tool_BS_2.prefab
+  uploadId: 242452
