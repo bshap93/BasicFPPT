@@ -15,6 +15,7 @@ namespace Lightbug.CharacterControllerPro.Implementation
         public BoolAction @jetPack;
         public BoolAction @dash;
         public BoolAction @crouch;
+        public BoolAction @mine;
 
 
         // Float actions
@@ -48,6 +49,8 @@ namespace Lightbug.CharacterControllerPro.Implementation
             @roll.Reset();
 
             @movement.Reset();
+            
+            @mine.Reset();
 
         }
 
@@ -79,6 +82,9 @@ namespace Lightbug.CharacterControllerPro.Implementation
             @roll = new FloatAction();
 
             @movement = new Vector2Action();
+            
+            @mine = new BoolAction();
+            @mine.Initialize();
 
         }
 
@@ -101,6 +107,7 @@ namespace Lightbug.CharacterControllerPro.Implementation
             @roll.value = inputHandler.GetFloat("Roll");
 
             @movement.value = inputHandler.GetVector2("Movement");
+            @mine.value = inputHandler.GetBool("Mine");
 
         }
 

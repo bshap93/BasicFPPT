@@ -17,11 +17,10 @@ namespace Domains.Mining.Scripts
             {
                 toolAnimator.SetBool(SwingMiningTool, true);
             }
-            PerformMining();
-            return base.CheckEnterTransition(fromState);
+            return PerformMining();
         }
         
-        private void PerformMining()
+        private bool PerformMining()
         {
             RaycastHit hit;
             if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, miningRange ))
@@ -32,19 +31,28 @@ namespace Domains.Mining.Scripts
                     interactable.Interact();
                 }
 
+                return true;
+
             }
+            
+            return false;
         }
 
         // Write your transitions here
         public override void CheckExitTransition()
         {
+            if (!CharacterActions.mine.value)
+            {
+                Debug.Log("Mining State will be exited");
+                CharacterStateController.EnqueueTransition<MyNormalMovement>();
+            }
         }
 
 
         
         public override void UpdateBehaviour(float dt)
         {
-            throw new System.NotImplementedException();
+            
         }
 
 

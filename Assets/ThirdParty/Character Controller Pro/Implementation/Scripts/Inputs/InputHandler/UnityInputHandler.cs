@@ -1,13 +1,13 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-namespace Lightbug.CharacterControllerPro.Implementation
+namespace ThirdParty.Character_Controller_Pro.Implementation.Scripts.Inputs.InputHandler
 {
 
     /// <summary>
     /// This input handler implements the input detection following the Unity's Input Manager convention. This scheme is used for desktop games.
     /// </summary>
-    public class UnityInputHandler : InputHandler
+    public class UnityInputHandler : Lightbug.CharacterControllerPro.Implementation.InputHandler
     {
         struct Vector2Action
         {

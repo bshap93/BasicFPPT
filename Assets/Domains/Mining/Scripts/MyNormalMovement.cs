@@ -1,13 +1,13 @@
-using Lightbug.CharacterControllerPro.Core;
+﻿using Lightbug.CharacterControllerPro.Core;
 using Lightbug.CharacterControllerPro.Demo;
 using Lightbug.CharacterControllerPro.Implementation;
 using Lightbug.Utilities;
 using UnityEngine;
 
-namespace ThirdParty.Character_Controller_Pro.Demo.Scripts.States
+namespace Domains.Mining.Scripts
 {
     [AddComponentMenu("Character Controller Pro/Demo/Character/States/Normal Movement")]
-    public class NormalMovement : CharacterState
+    public class MyNormalMovement : CharacterState
     {
 
         [Space(10)]
@@ -149,12 +149,13 @@ namespace ThirdParty.Character_Controller_Pro.Demo.Scripts.States
 
         public override void CheckExitTransition()
         {
-
-            
-            if (CharacterActions.jetPack.value)
+            if (CharacterActions.mine.value)
             {
-                CharacterStateController.EnqueueTransition<JetPack>();
+                Debug.Log("Mining State will be entered");
+                CharacterStateController.EnqueueTransition<MiningState>();
             }
+            
+
     
         }
 

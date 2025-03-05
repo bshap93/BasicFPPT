@@ -3,6 +3,7 @@ using UnityEngine;
 using Lightbug.CharacterControllerPro.Core;
 using Lightbug.CharacterControllerPro.Implementation;
 using Lightbug.Utilities;
+using ThirdParty.Character_Controller_Pro.Implementation.Scripts.Inputs.InputHandler;
 
 namespace Lightbug.CharacterControllerPro.Demo
 {

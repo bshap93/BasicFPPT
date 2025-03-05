@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using ThirdParty.Character_Controller_Pro.Implementation.Scripts.Inputs.InputHandler;
+using UnityEngine;
 
 namespace Lightbug.CharacterControllerPro.Implementation
 {

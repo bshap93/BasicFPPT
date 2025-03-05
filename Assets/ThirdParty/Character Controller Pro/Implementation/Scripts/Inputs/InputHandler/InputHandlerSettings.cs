@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using Lightbug.CharacterControllerPro.Implementation;
 using Lightbug.Utilities;
+using UnityEngine;
 
-namespace Lightbug.CharacterControllerPro.Implementation
+namespace ThirdParty.Character_Controller_Pro.Implementation.Scripts.Inputs.InputHandler
 {
     [System.Serializable]
     public class InputHandlerSettings
@@ -15,12 +16,12 @@ namespace Lightbug.CharacterControllerPro.Implementation
 
         [SerializeField]
         [Condition("humanInputType", ConditionAttribute.ConditionType.IsEqualTo, ConditionAttribute.VisibilityType.Hidden, 2)]
-        InputHandler inputHandler = null;
+        Lightbug.CharacterControllerPro.Implementation.InputHandler inputHandler = null;
 
         /// <summary>
         /// Gets/Sets the current InputHandler component.
         /// </summary>
-        public InputHandler InputHandler
+        public Lightbug.CharacterControllerPro.Implementation.InputHandler InputHandler
         {
             get => inputHandler;
             set => inputHandler = value;
@@ -29,7 +30,7 @@ namespace Lightbug.CharacterControllerPro.Implementation
         public void Initialize(GameObject gameObject)
         {
             if (inputHandler == null)
-                inputHandler = InputHandler.CreateInputHandler(gameObject, humanInputType);
+                inputHandler = Lightbug.CharacterControllerPro.Implementation.InputHandler.CreateInputHandler(gameObject, humanInputType);
         }
     }
 }
