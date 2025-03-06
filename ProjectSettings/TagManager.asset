@@ -14,6 +14,7 @@ TagManager:
   - Mud
   - Boost
   - ContactRigidbody
+  - dirt
   layers:
   - Default
   - TransparentFX
@@ -24,9 +25,9 @@ TagManager:
   - Ground
   - Character
   - Interactable
-  - 
-  - 
-  - 
+  - ToCombine
+  - Voxelize
+  - Voxelize02
   - 
   - 
   - 

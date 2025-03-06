@@ -1,7 +1,5 @@
-using System;
 using UnityEngine;
 
-using UnityEngine;
 using RayFire;
 using UnityEngine.Serialization;
 
@@ -25,26 +23,37 @@ public class MineableRock : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (fragShouldDestroy)
-        {
-            ApplyExplosionForce();
-            Destroy(gameObject);
-            
-        } else 
+
         if (_rfRigid != null)
         {
             _rfRigid.Demolish(); // Trigger fragmentation instead of just destroying
             
-            
-            
-
             ApplyExplosionForce();
-
-            if (_rfRigid.fragments.Count > 1)
+            
+            RaycastHit hit;
+            if (Camera.main != null)
             {
-                // Destroy one at random
-                Destroy(_rfRigid.fragments[UnityEngine.Random.Range(0, _rfRigid.fragments.Count)].gameObject);
+                Vector3 rayOrigin = Camera.main.transform.position; // Start from the camera
+                Vector3 rayDirection = Camera.main.transform.TransformDirection(Vector3.forward); // Cast forward from camera
+
+                if (Physics.Raycast(rayOrigin, rayDirection, out hit, 5f))
+                {
+                    RayfireRigid hitFragment = hit.collider.GetComponent<RayfireRigid>();
+                    if (hitFragment != null)
+                    {
+                        Destroy(hitFragment.gameObject);
+                        Debug.Log("Destroyed aimed fragment: " + hitFragment.gameObject.name);
+                    }
+                }
             }
+
+
+
+            // if (_rfRigid.fragments.Count > 1)
+            // {
+            //     // Destroy one at random
+            //     Destroy(_rfRigid.fragments[UnityEngine.Random.Range(0, _rfRigid.fragments.Count)].gameObject);
+            // }
             
             
             
