@@ -4318,6 +4318,8 @@ MonoBehaviour:
       value: 0
     crouch:
       value: 0
+    mine:
+      value: 0
     pitch:
       value: 0
     roll:
