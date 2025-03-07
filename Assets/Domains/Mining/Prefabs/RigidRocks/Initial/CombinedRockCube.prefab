@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7935897976874858867}
-  - component: {fileID: 8538844793872855765}
   - component: {fileID: 825678334353576046}
   - component: {fileID: 9189414247101539374}
   - component: {fileID: 6089721318761333080}
   - component: {fileID: 5944713127309430570}
-  m_Layer: 0
+  - component: {fileID: 72469760897836298}
+  m_Layer: 8
   m_Name: CombinedRockCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,23 +36,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8538844793872855765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3640377934106254930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03afcff0c1e9bee4f8c9e97428da7b81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  go: {fileID: 3640377934106254930}
-  t: {fileID: 7935897976874858867}
-  mr: {fileID: 9189414247101539374}
-  mf: {fileID: 825678334353576046}
-  garbageCollectMesh: {fileID: 0}
 --- !u!33 &825678334353576046
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -139,13 +122,13 @@ MonoBehaviour:
   objTp: 0
   dmlTp: 1
   physics:
-    mt: 4
+    mt: 2
     ma: {fileID: 0}
     mb: 0
     ms: 1
     ct: 0
     pc: 1
-    ine: 0
+    ine: 1
     gr: 1
     si: 6
     st: 0.005
@@ -186,7 +169,7 @@ MonoBehaviour:
     am: 15
     var: 0
     dpf: 0.5
-    bias: 0
+    bias: 1
     sd: 1
     use: 0
     cld: 1
@@ -312,3 +295,19 @@ MonoBehaviour:
   skr: {fileID: 0}
   rest: {fileID: 0}
   sound: {fileID: 0}
+--- !u!114 &72469760897836298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3640377934106254930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac53c39a7de5cf4f922da111d79fc05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionForce: 100
+  explosionRadius: 1
+  successiveExplosionForceMultiplier: 1
+  fragShouldDestroy: 0

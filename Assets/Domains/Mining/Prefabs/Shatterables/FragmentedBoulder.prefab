@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6664424563328817479}
   - component: {fileID: 4559075831323846191}
   - component: {fileID: 8948703402277818549}
-  - component: {fileID: 1364934633839736254}
-  - component: {fileID: 3034013935235336855}
-  m_Layer: 0
+  - component: {fileID: 2162246902806194043}
+  - component: {fileID: 6975468759406900638}
+  - component: {fileID: 4863379307941154788}
+  m_Layer: 8
   m_Name: SP_Mountain02_sh_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +106,7 @@ MonoBehaviour:
   explosionRadius: 1
   successiveExplosionForceMultiplier: 1
   fragShouldDestroy: 0
---- !u!114 &1364934633839736254
+--- !u!114 &2162246902806194043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,7 +121,7 @@ MonoBehaviour:
   initialization: 0
   simTp: 0
   objTp: 0
-  dmlTp: 1
+  dmlTp: 3
   physics:
     mt: 2
     ma: {fileID: 0}
@@ -134,7 +135,7 @@ MonoBehaviour:
     st: 0.005
     dm: 0.7
     rb: {fileID: 0}
-    mc: {fileID: 3034013935235336855}
+    mc: {fileID: 6975468759406900638}
     cc: []
     ign: 
     exclude: 0
@@ -166,8 +167,8 @@ MonoBehaviour:
       m_Center: {x: 10.263536, y: -0.061044633, z: -22.73325}
       m_Extent: {x: 1.3159608, y: 0.65214854, z: 1.317138}
   mshDemol:
-    am: 8
-    var: 8
+    am: 4
+    var: 0
     dpf: 0.5
     bias: 0
     sd: 1
@@ -269,12 +270,12 @@ MonoBehaviour:
     onDemolition: 1
     onActivation: 0
     byOffset: 0
-    fadeType: 5
+    fadeType: 4
     fadeTime: 5
     lifeType: 4
-    lifeTime: 5
+    lifeTime: 7
     lifeVariation: 3
-    sizeFilter: 1.2
+    sizeFilter: 0
     shardAmount: 5
   reset:
     transform: 1
@@ -295,7 +296,7 @@ MonoBehaviour:
   skr: {fileID: 0}
   rest: {fileID: 0}
   sound: {fileID: 0}
---- !u!64 &3034013935235336855
+--- !u!64 &6975468759406900638
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -317,6 +318,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &4863379307941154788
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097712374022234951}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2457108932089774146
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,9 +352,10 @@ GameObject:
   - component: {fileID: 4138771445688892748}
   - component: {fileID: 5492814186505828553}
   - component: {fileID: 4952328191368076038}
-  - component: {fileID: 9127621074303208877}
-  - component: {fileID: 6321780226196743621}
-  m_Layer: 0
+  - component: {fileID: 7080976656585721588}
+  - component: {fileID: 3962221154568194222}
+  - component: {fileID: 5484129738836049245}
+  m_Layer: 8
   m_Name: SP_Mountain02_sh_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +446,7 @@ MonoBehaviour:
   explosionRadius: 1
   successiveExplosionForceMultiplier: 1
   fragShouldDestroy: 0
---- !u!114 &9127621074303208877
+--- !u!114 &7080976656585721588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -437,7 +461,7 @@ MonoBehaviour:
   initialization: 0
   simTp: 0
   objTp: 0
-  dmlTp: 1
+  dmlTp: 3
   physics:
     mt: 2
     ma: {fileID: 0}
@@ -451,7 +475,7 @@ MonoBehaviour:
     st: 0.005
     dm: 0.7
     rb: {fileID: 0}
-    mc: {fileID: 6321780226196743621}
+    mc: {fileID: 3962221154568194222}
     cc: []
     ign: 
     exclude: 0
@@ -483,8 +507,8 @@ MonoBehaviour:
       m_Center: {x: 11.39903, y: 1.6817138, z: -21.993408}
       m_Extent: {x: 0.8152499, y: 1.1938807, z: 0.86815333}
   mshDemol:
-    am: 8
-    var: 8
+    am: 4
+    var: 0
     dpf: 0.5
     bias: 0
     sd: 1
@@ -586,12 +610,12 @@ MonoBehaviour:
     onDemolition: 1
     onActivation: 0
     byOffset: 0
-    fadeType: 5
+    fadeType: 4
     fadeTime: 5
     lifeType: 4
-    lifeTime: 5
+    lifeTime: 7
     lifeVariation: 3
-    sizeFilter: 1.2
+    sizeFilter: 0
     shardAmount: 5
   reset:
     transform: 1
@@ -612,7 +636,7 @@ MonoBehaviour:
   skr: {fileID: 0}
   rest: {fileID: 0}
   sound: {fileID: 0}
---- !u!64 &6321780226196743621
+--- !u!64 &3962221154568194222
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -634,6 +658,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &5484129738836049245
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2457108932089774146}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3488260484243762130
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2669433287142336800}
   - component: {fileID: 1834509966656957151}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FragmentedBoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +705,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3488260484243762130}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.322641, y: -0.7131932, z: -22.41518}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -856,15 +902,15 @@ MonoBehaviour:
     fragments: 0
   initialized: 0
   fragments:
-  - {fileID: 6328679243829128504}
-  - {fileID: 1961004962675758314}
-  - {fileID: 1364934633839736254}
-  - {fileID: 4001345881184397848}
-  - {fileID: 1725442732127461854}
-  - {fileID: 9127621074303208877}
-  - {fileID: 3825437450817572020}
-  - {fileID: 4561369307727698446}
-  - {fileID: 2891792392723325014}
+  - {fileID: 2722410227073285511}
+  - {fileID: 5868984520954570303}
+  - {fileID: 2162246902806194043}
+  - {fileID: 1880742973643331970}
+  - {fileID: 1706362359062418536}
+  - {fileID: 7080976656585721588}
+  - {fileID: 8099374503472659820}
+  - {fileID: 7938517114950679413}
+  - {fileID: 4729798287839883497}
   chRot: {x: 0, y: 0, z: 0, w: 0}
   tsf: {fileID: 0}
   rtC: {fileID: 0}
@@ -886,9 +932,10 @@ GameObject:
   - component: {fileID: 1119665570089257254}
   - component: {fileID: 2585347288227604136}
   - component: {fileID: 7950195109622451777}
-  - component: {fileID: 2891792392723325014}
-  - component: {fileID: 6074636714048689958}
-  m_Layer: 0
+  - component: {fileID: 4729798287839883497}
+  - component: {fileID: 5442795102684294797}
+  - component: {fileID: 8598923228380042400}
+  m_Layer: 8
   m_Name: SP_Mountain02_sh_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -979,7 +1026,7 @@ MonoBehaviour:
   explosionRadius: 1
   successiveExplosionForceMultiplier: 1
   fragShouldDestroy: 0
---- !u!114 &2891792392723325014
+--- !u!114 &4729798287839883497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -994,7 +1041,7 @@ MonoBehaviour:
   initialization: 0
   simTp: 0
   objTp: 0
-  dmlTp: 1
+  dmlTp: 3
   physics:
     mt: 2
     ma: {fileID: 0}
@@ -1008,7 +1055,7 @@ MonoBehaviour:
     st: 0.005
     dm: 0.7
     rb: {fileID: 0}
-    mc: {fileID: 6074636714048689958}
+    mc: {fileID: 5442795102684294797}
     cc: []
     ign: 
     exclude: 0
@@ -1040,8 +1087,8 @@ MonoBehaviour:
       m_Center: {x: 12.1350355, y: -0.02706474, z: -22.742147}
       m_Extent: {x: 1.08605, y: 0.68612844, z: 1.5490217}
   mshDemol:
-    am: 8
-    var: 8
+    am: 4
+    var: 0
     dpf: 0.5
     bias: 0
     sd: 1
@@ -1143,12 +1190,12 @@ MonoBehaviour:
     onDemolition: 1
     onActivation: 0
     byOffset: 0
-    fadeType: 5
+    fadeType: 4
     fadeTime: 5
     lifeType: 4
-    lifeTime: 5
+    lifeTime: 7
     lifeVariation: 3
-    sizeFilter: 1.2
+    sizeFilter: 0
     shardAmount: 5
   reset:
     transform: 1
@@ -1169,7 +1216,7 @@ MonoBehaviour:
   skr: {fileID: 0}
   rest: {fileID: 0}
   sound: {fileID: 0}
---- !u!64 &6074636714048689958
+--- !u!64 &5442795102684294797
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1191,6 +1238,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &8598923228380042400
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566598872872344588}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4222210748827514773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,9 +1272,10 @@ GameObject:
   - component: {fileID: 8770826355234612004}
   - component: {fileID: 3092451864094240140}
   - component: {fileID: 4950686257207748826}
-  - component: {fileID: 3825437450817572020}
-  - component: {fileID: 635100559106256175}
-  m_Layer: 0
+  - component: {fileID: 8099374503472659820}
+  - component: {fileID: 423770510222587682}
+  - component: {fileID: 8495901621766698976}
+  m_Layer: 8
   m_Name: SP_Mountain02_sh_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1296,7 +1366,7 @@ MonoBehaviour:
   explosionRadius: 1
   successiveExplosionForceMultiplier: 1
   fragShouldDestroy: 0
---- !u!114 &3825437450817572020
+--- !u!114 &8099374503472659820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1311,7 +1381,7 @@ MonoBehaviour:
   initialization: 0
   simTp: 0
   objTp: 0
-  dmlTp: 1
+  dmlTp: 3
   physics:
     mt: 2
     ma: {fileID: 0}
@@ -1325,7 +1395,7 @@ MonoBehaviour:
     st: 0.005
     dm: 0.7
     rb: {fileID: 0}
-    mc: {fileID: 635100559106256175}
+    mc: {fileID: 423770510222587682}
     cc: []
     ign: 
     exclude: 0
@@ -1357,8 +1427,8 @@ MonoBehaviour:
       m_Center: {x: 11.701185, y: 1.6001408, z: -22.654358}
       m_Extent: {x: 0.9420128, y: 1.1293111, z: 1.1928339}
   mshDemol:
-    am: 8
-    var: 8
+    am: 4
+    var: 0
     dpf: 0.5
     bias: 0
     sd: 1
@@ -1460,12 +1530,12 @@ MonoBehaviour:
     onDemolition: 1
     onActivation: 0
     byOffset: 0
-    fadeType: 5
+    fadeType: 4
     fadeTime: 5
     lifeType: 4
-    lifeTime: 5
+    lifeTime: 7
     lifeVariation: 3
-    sizeFilter: 1.2
+    sizeFilter: 0
     shardAmount: 5
   reset:
     transform: 1
@@ -1486,7 +1556,7 @@ MonoBehaviour:
   skr: {fileID: 0}
   rest: {fileID: 0}
   sound: {fileID: 0}
---- !u!64 &635100559106256175
+--- !u!64 &423770510222587682
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1508,6 +1578,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &8495901621766698976
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4222210748827514773}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4593753387499475095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,9 +1612,10 @@ GameObject:
   - component: {fileID: 8506273534797582088}
   - component: {fileID: 5388147764472099750}
   - component: {fileID: 1072282977843859380}
-  - component: {fileID: 1725442732127461854}
-  - component: {fileID: 7692917397122232350}
-  m_Layer: 0
+  - component: {fileID: 1706362359062418536}
+  - component: {fileID: 694466905124154311}
+  - component: {fileID: 2865813849644773360}
+  m_Layer: 8
   m_Name: SP_Mountain02_sh_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1613,7 +1706,7 @@ MonoBehaviour:
   explosionRadius: 1
   successiveExplosionForceMultiplier: 1
   fragShouldDestroy: 0
---- !u!114 &1725442732127461854
+--- !u!114 &1706362359062418536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1628,7 +1721,7 @@ MonoBehaviour:
   initialization: 0
   simTp: 0
   objTp: 0
-  dmlTp: 1
+  dmlTp: 3
   physics:
     mt: 2
     ma: {fileID: 0}
@@ -1642,7 +1735,7 @@ MonoBehaviour:
     st: 0.005
     dm: 0.7
     rb: {fileID: 0}
-    mc: {fileID: 7692917397122232350}
+    mc: {fileID: 694466905124154311}
     cc: []
     ign: 
     exclude: 0
@@ -1674,8 +1767,8 @@ MonoBehaviour:
       m_Center: {x: 12.347733, y: 0.53151083, z: -21.750414}
       m_Extent: {x: 1.0984427, y: 1.244704, z: 1.0930498}
   mshDemol:
-    am: 8
-    var: 8
+    am: 4
+    var: 0
     dpf: 0.5
     bias: 0
     sd: 1
@@ -1777,12 +1870,12 @@ MonoBehaviour:
     onDemolition: 1
     onActivation: 0
     byOffset: 0
-    fadeType: 5
+    fadeType: 4
     fadeTime: 5
     lifeType: 4
-    lifeTime: 5
+    lifeTime: 7
     lifeVariation: 3
-    sizeFilter: 1.2
+    sizeFilter: 0
     shardAmount: 5
   reset:
     transform: 1
@@ -1803,7 +1896,7 @@ MonoBehaviour:
   skr: {fileID: 0}
   rest: {fileID: 0}
   sound: {fileID: 0}
---- !u!64 &7692917397122232350
+--- !u!64 &694466905124154311
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1825,6 +1918,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &2865813849644773360
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4593753387499475095}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8520892866822072378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,9 +1952,10 @@ GameObject:
   - component: {fileID: 5317459445534101258}
   - component: {fileID: 3979109374297982004}
   - component: {fileID: 6621767865723820515}
-  - component: {fileID: 4561369307727698446}
-  - component: {fileID: 3358555186855225236}
-  m_Layer: 0
+  - component: {fileID: 7938517114950679413}
+  - component: {fileID: 1071306180074589909}
+  - component: {fileID: 1499119889317095113}
+  m_Layer: 8
   m_Name: SP_Mountain02_sh_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1930,7 +2046,7 @@ MonoBehaviour:
   explosionRadius: 1
   successiveExplosionForceMultiplier: 1
   fragShouldDestroy: 0
---- !u!114 &4561369307727698446
+--- !u!114 &7938517114950679413
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1945,7 +2061,7 @@ MonoBehaviour:
   initialization: 0
   simTp: 0
   objTp: 0
-  dmlTp: 1
+  dmlTp: 3
   physics:
     mt: 2
     ma: {fileID: 0}
@@ -1959,7 +2075,7 @@ MonoBehaviour:
     st: 0.005
     dm: 0.7
     rb: {fileID: 0}
-    mc: {fileID: 3358555186855225236}
+    mc: {fileID: 1071306180074589909}
     cc: []
     ign: 
     exclude: 0
@@ -1991,8 +2107,8 @@ MonoBehaviour:
       m_Center: {x: 12.797216, y: 0.61247945, z: -23.42583}
       m_Extent: {x: 0.93074244, y: 1.3256726, z: 0.93846273}
   mshDemol:
-    am: 8
-    var: 8
+    am: 4
+    var: 0
     dpf: 0.5
     bias: 0
     sd: 1
@@ -2094,12 +2210,12 @@ MonoBehaviour:
     onDemolition: 1
     onActivation: 0
     byOffset: 0
-    fadeType: 5
+    fadeType: 4
     fadeTime: 5
     lifeType: 4
-    lifeTime: 5
+    lifeTime: 7
     lifeVariation: 3
-    sizeFilter: 1.2
+    sizeFilter: 0
     shardAmount: 5
   reset:
     transform: 1
@@ -2120,7 +2236,7 @@ MonoBehaviour:
   skr: {fileID: 0}
   rest: {fileID: 0}
   sound: {fileID: 0}
---- !u!64 &3358555186855225236
+--- !u!64 &1071306180074589909
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2142,6 +2258,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &1499119889317095113
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8520892866822072378}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8640618702556557060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,9 +2292,10 @@ GameObject:
   - component: {fileID: 7489576259290169560}
   - component: {fileID: 2914965174648365936}
   - component: {fileID: 3645311320515010463}
-  - component: {fileID: 1961004962675758314}
-  - component: {fileID: 3205009095809218045}
-  m_Layer: 0
+  - component: {fileID: 5868984520954570303}
+  - component: {fileID: 189023535122250023}
+  - component: {fileID: 6785093329005729832}
+  m_Layer: 8
   m_Name: SP_Mountain02_sh_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2247,7 +2386,7 @@ MonoBehaviour:
   explosionRadius: 1
   successiveExplosionForceMultiplier: 1
   fragShouldDestroy: 0
---- !u!114 &1961004962675758314
+--- !u!114 &5868984520954570303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2262,7 +2401,7 @@ MonoBehaviour:
   initialization: 0
   simTp: 0
   objTp: 0
-  dmlTp: 1
+  dmlTp: 3
   physics:
     mt: 2
     ma: {fileID: 0}
@@ -2276,7 +2415,7 @@ MonoBehaviour:
     st: 0.005
     dm: 0.7
     rb: {fileID: 0}
-    mc: {fileID: 3205009095809218045}
+    mc: {fileID: 189023535122250023}
     cc: []
     ign: 
     exclude: 0
@@ -2308,8 +2447,8 @@ MonoBehaviour:
       m_Center: {x: 10.418451, y: 0.004570186, z: -21.580694}
       m_Extent: {x: 1.5011274, y: 0.71776336, z: 1.1146278}
   mshDemol:
-    am: 8
-    var: 8
+    am: 4
+    var: 0
     dpf: 0.5
     bias: 0
     sd: 1
@@ -2411,12 +2550,12 @@ MonoBehaviour:
     onDemolition: 1
     onActivation: 0
     byOffset: 0
-    fadeType: 5
+    fadeType: 4
     fadeTime: 5
     lifeType: 4
-    lifeTime: 5
+    lifeTime: 7
     lifeVariation: 3
-    sizeFilter: 1.2
+    sizeFilter: 0
     shardAmount: 5
   reset:
     transform: 1
@@ -2437,7 +2576,7 @@ MonoBehaviour:
   skr: {fileID: 0}
   rest: {fileID: 0}
   sound: {fileID: 0}
---- !u!64 &3205009095809218045
+--- !u!64 &189023535122250023
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2459,6 +2598,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &6785093329005729832
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8640618702556557060}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &9143716128136352760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,9 +2632,9 @@ GameObject:
   - component: {fileID: 154541191595496906}
   - component: {fileID: 2310832844572427902}
   - component: {fileID: 4492271050275032061}
-  - component: {fileID: 4001345881184397848}
-  - component: {fileID: 9161912973447032500}
-  m_Layer: 0
+  - component: {fileID: 1880742973643331970}
+  - component: {fileID: 873276903732283908}
+  m_Layer: 8
   m_Name: SP_Mountain02_sh_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2564,7 +2725,7 @@ MonoBehaviour:
   explosionRadius: 1
   successiveExplosionForceMultiplier: 1
   fragShouldDestroy: 0
---- !u!114 &4001345881184397848
+--- !u!114 &1880742973643331970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2579,7 +2740,7 @@ MonoBehaviour:
   initialization: 0
   simTp: 0
   objTp: 0
-  dmlTp: 1
+  dmlTp: 3
   physics:
     mt: 2
     ma: {fileID: 0}
@@ -2593,7 +2754,7 @@ MonoBehaviour:
     st: 0.005
     dm: 0.7
     rb: {fileID: 0}
-    mc: {fileID: 9161912973447032500}
+    mc: {fileID: 0}
     cc: []
     ign: 
     exclude: 0
@@ -2625,8 +2786,8 @@ MonoBehaviour:
       m_Center: {x: 10.650041, y: 0.6226591, z: -22.92633}
       m_Extent: {x: 1.2496685, y: 0.7138032, z: 1.3119024}
   mshDemol:
-    am: 8
-    var: 8
+    am: 4
+    var: 0
     dpf: 0.5
     bias: 0
     sd: 1
@@ -2728,12 +2889,12 @@ MonoBehaviour:
     onDemolition: 1
     onActivation: 0
     byOffset: 0
-    fadeType: 5
+    fadeType: 4
     fadeTime: 5
     lifeType: 4
-    lifeTime: 5
+    lifeTime: 7
     lifeVariation: 3
-    sizeFilter: 1.2
+    sizeFilter: 0
     shardAmount: 5
   reset:
     transform: 1
@@ -2754,7 +2915,7 @@ MonoBehaviour:
   skr: {fileID: 0}
   rest: {fileID: 0}
   sound: {fileID: 0}
---- !u!64 &9161912973447032500
+--- !u!64 &873276903732283908
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2836,24 +2997,277 @@ PrefabInstance:
       propertyPath: m_Name
       value: SP_Mountain02_sh_1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8389307226358542213, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7751138881859473851, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
+    - {fileID: 7679255977050625460, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8389307226358542213, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2722410227073285511}
+    - targetCorrespondingSourceObject: {fileID: 8389307226358542213, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8240851864189540371}
+    - targetCorrespondingSourceObject: {fileID: 8389307226358542213, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5914155306760074046}
   m_SourcePrefab: {fileID: 100100000, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
 --- !u!4 &3356706008338258780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1428948359340401616, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
   m_PrefabInstance: {fileID: 4414036305964923020}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6328679243829128504 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7679255977050625460, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
+--- !u!23 &3815545121750047993 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 698696417800463477, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
   m_PrefabInstance: {fileID: 4414036305964923020}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!1 &5272871681063425801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8389307226358542213, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
+  m_PrefabInstance: {fileID: 4414036305964923020}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2722410227073285511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5272871681063425801}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialization: 0
+  simTp: 0
+  objTp: 0
+  dmlTp: 3
+  physics:
+    mt: 2
+    ma: {fileID: 0}
+    mb: 0
+    ms: 1
+    ct: 0
+    pc: 1
+    ine: 0
+    gr: 1
+    si: 6
+    st: 0.005
+    dm: 0.7
+    rb: {fileID: 0}
+    mc: {fileID: 8240851864189540371}
+    cc: []
+    ign: 
+    exclude: 0
+    solidity: 1
+    destructible: 0
+  activation:
+    off: 0
+    loc: 0
+    vel: 0
+    dmg: 0
+    act: 0
+    imp: 0
+    con: 0
+    uny: 0
+    atb: 0
+    l: 0
+    lay: 0
+    cnt: {fileID: 0}
+  limitations:
+    col: 1
+    sol: 0.1
+    tag: Untagged
+    depth: 1
+    time: 0.2
+    size: 0.1
+    vis: 0
+    bld: 0
+    bound:
+      m_Center: {x: 12.100385, y: 2.4584217, z: -22.601095}
+      m_Extent: {x: 0.5402908, y: 0.64773893, z: 0.42672035}
+  mshDemol:
+    am: 4
+    var: 0
+    dpf: 0.5
+    bias: 0
+    sd: 1
+    use: 0
+    cld: 1
+    sim: 0
+    cnv: 0
+    inp: 9
+    prp:
+      rem: 0
+      dec: 1
+      cap: 1
+      col: 0
+      szF: 0
+      l: 1
+      lay: 0
+      t: 1
+      tag: 
+    ch:
+      tp: 0
+      frm: 3
+      frg: 4
+      skp: 0
+    sht: {fileID: 0}
+    rotStart: {x: 0, y: 0, z: 0, w: 1}
+  clsDemol:
+    cnt: 0
+    sim: 0
+    mAr: 0
+    mSz: 0
+    pct: 0
+    seed: 0
+    type: 0
+    ratio: 15
+    units: 1
+    sAr: 70
+    sDm: 0
+    mnAm: 3
+    mxAm: 6
+    cDm: 1
+    collapse:
+      type: 1
+      start: 0
+      end: 75
+      steps: 10
+      duration: 15
+      var: 0
+      seed: 0
+    clsCount: 1
+    cluster:
+      id: -1
+      tm: {fileID: 0}
+      depth: 0
+      pos: {x: 0, y: 0, z: 0}
+      rot: {x: 0, y: 0, z: 0, w: 0}
+      scl: {x: 0, y: 0, z: 0}
+      bound:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+      demolishable: 1
+      rigid: {fileID: 0}
+      shards: []
+      cachedHost: 0
+      areaCollapse: 0
+      minimumArea: 0
+      maximumArea: 0
+      sizeCollapse: 0
+      minimumSize: 0
+      maximumSize: 0
+      randomCollapse: 0
+    minorClusters: []
+    cn: 1
+    nd: 0
+    am: 0
+  refDemol:
+    rfs: {fileID: 0}
+    rnd: []
+    act: 0
+    add: 1
+    scl: 1
+    mat: 0
+  materials:
+    iMat: {fileID: 0}
+    oMat: {fileID: 0}
+    mScl: 0.5
+    uvE: 0
+    uvC: {x: 0, y: 0}
+    uvR: {x: 1, y: 1}
+    cE: 0
+    cC: {r: 0, g: 0, b: 0, a: 0}
+  damage:
+    en: 0
+    max: 100
+    cur: 0
+    col: 0
+    mlt: 1
+    shr: 0
+  fading:
+    onDemolition: 1
+    onActivation: 0
+    byOffset: 0
+    fadeType: 4
+    fadeTime: 5
+    lifeType: 4
+    lifeTime: 7
+    lifeVariation: 3
+    sizeFilter: 0
+    shardAmount: 5
+  reset:
+    transform: 1
+    damage: 1
+    connectivity: 0
+    action: 0
+    destroyDelay: 1
+    mesh: 4
+    fragments: 0
+  initialized: 0
+  fragments: []
+  chRot: {x: 0, y: 0, z: 0, w: 0}
+  tsf: {fileID: 3356706008338258780}
+  rtC: {fileID: 0}
+  rtP: {fileID: 0}
+  mFlt: {fileID: 8003032971865021488}
+  mRnd: {fileID: 3815545121750047993}
+  skr: {fileID: 0}
+  rest: {fileID: 0}
+  sound: {fileID: 0}
+--- !u!64 &8240851864189540371
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5272871681063425801}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!64 &5914155306760074046
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5272871681063425801}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!33 &8003032971865021488 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 5931718671452316860, guid: ddee05707b3a9e5478148f516dc2f317, type: 3}
+  m_PrefabInstance: {fileID: 4414036305964923020}
+  m_PrefabAsset: {fileID: 0}

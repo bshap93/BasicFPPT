@@ -103,7 +103,7 @@ MonoBehaviour:
   initialization: 1
   simTp: 0
   objTp: 0
-  dmlTp: 1
+  dmlTp: 3
   physics:
     mt: 4
     ma: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
     ms: 1
     ct: 0
     pc: 1
-    ine: 0
+    ine: 1
     gr: 1
     si: 6
     st: 0.005
@@ -138,7 +138,7 @@ MonoBehaviour:
     cnt: {fileID: 0}
   limitations:
     col: 1
-    sol: 0.1
+    sol: 0.86
     tag: Untagged
     depth: 1
     time: 0.2
@@ -152,7 +152,7 @@ MonoBehaviour:
     am: 15
     var: 0
     dpf: 0.5
-    bias: 0
+    bias: 1
     sd: 1
     use: 0
     cld: 1

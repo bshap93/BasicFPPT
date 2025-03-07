@@ -8,7 +8,8 @@ public class MineableRock : MonoBehaviour, IInteractable
     private RayfireRigid _rfRigid;
     public float explosionForce = 100f;
     public float explosionRadius = 1f;
-    public float successiveExplosionForceMultiplier = 10f;
+    // default value of 1f or no change
+    public float successiveExplosionForceMultiplier = 1f;
     public bool fragShouldDestroy; 
 
     void OnEnable()
